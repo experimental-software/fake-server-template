@@ -31,6 +31,7 @@ docker image build . -t experimentalsoftware/fake-server
 
 - https://wiremock.org/
 - https://tweak-extension.com/
+- https://github.com/typicode/json-server
 
 ## References
 
