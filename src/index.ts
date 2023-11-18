@@ -3,8 +3,13 @@ import express, { Express, Request, Response } from "express";
 const app: Express = express();
 const port = 7000;
 
+app.use(function(_, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  next();
+});
+
 app.get("/", (req: Request, res: Response) => {
-  res.send("Express + TypeScript Server");
+  res.send(`{"info": "Express + TypeScript Server"}`);
 });
 
 app.listen(port, () => {
