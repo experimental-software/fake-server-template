@@ -35,3 +35,4 @@ docker image build . -t experimentalsoftware/fake-server
 ## References
 
 - https://abseil.io/resources/swe-book/html/ch13.html
+- https://microsoft.github.io/code-with-engineering-playbook/developer-experience/client-app-inner-loop/
