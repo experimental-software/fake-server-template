@@ -1,6 +1,6 @@
-# Fake Server Template
+# TypeScript Express Server
 
-Helps to create fake implementations for external dependencies.
+Helps to quickly setup TypeScript projects with an ExpressJS server.
 
 ## Dependencies
 
@@ -19,21 +19,6 @@ docker run --init -p 7000:7000 experimentalsoftware/fake-server
 npm run dev
 ```
 
-## Maintenance
-
-### Build Docker image
-
-```sh
-docker image build . -t experimentalsoftware/fake-server
-```
-
-## Alternatives
-
-- https://wiremock.org/
-- https://tweak-extension.com/
-- https://github.com/typicode/json-server
-
 ## References
 
-- https://abseil.io/resources/swe-book/html/ch13.html
-- https://microsoft.github.io/code-with-engineering-playbook/developer-experience/client-app-inner-loop/
+- https://www.digitalocean.com/community/tutorials/setting-up-a-node-project-with-typescript
