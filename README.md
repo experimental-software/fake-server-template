@@ -1,4 +1,4 @@
-# TypeScript Express Server
+# TypeScript Express Template
 
 Helps to quickly setup TypeScript projects with an ExpressJS server.
 
