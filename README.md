@@ -10,14 +10,11 @@ Helps to quickly setup TypeScript projects with an ExpressJS server.
 ## Create new project
 
 ```sh
-SLUG=example
+SLUG=typescript-sandbox-$(date +%s)
 {
-git clone git@github.com:experimental-software/typescript-express-template.git
+git clone git@github.com:experimental-software/typescript-express-template.git $SLUG
 cd $SLUG
-rm -rf .git
-git init
-git add .
-git commit -m "Initial commit"
+npm install
 }
 ```
 
