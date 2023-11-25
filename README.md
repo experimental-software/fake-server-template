@@ -7,10 +7,18 @@ Helps to quickly setup TypeScript projects with an ExpressJS server.
 - NodeJS 18+
 - Docker
 
-## Usage
+## Create new project
 
 ```sh
-docker run --init -p 7000:7000 experimentalsoftware/fake-server
+SLUG=example
+{
+git clone git@github.com:experimental-software/typescript-express-template.git
+cd $SLUG
+rm -rf .git
+git init
+git add .
+git commit -m "Initial commit"
+}
 ```
 
 ## Development
@@ -19,6 +27,27 @@ docker run --init -p 7000:7000 experimentalsoftware/fake-server
 npm run dev
 ```
 
+## Maintenance
+
+**Update dependencies**
+
+```sh
+npm outdated
+npm update
+{
+git add .
+git commit -m "chore: update dependencies"
+git push
+}
+```
+
+**Build Docker image**
+
+```sh
+docker build -t experimentalsoftware/express-server .
+docker run --init -p 7000:7000 experimentalsoftware/express-server
+```
+
 ## References
 
-- https://www.digitalocean.com/community/tutorials/setting-up-a-node-project-with-typescript
+- [How To Set Up a Node Project With Typescript | digitalocean.com](https://www.digitalocean.com/community/tutorials/setting-up-a-node-project-with-typescript)  
